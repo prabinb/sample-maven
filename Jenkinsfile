@@ -1,6 +1,6 @@
 pipeline{
-   agent('instance-1'){
-      stage(label 'git cloning'){
+   agent(label 'instance-1'){
+      stage('git cloning'){
          checkout scm 
       }
 
