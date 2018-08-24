@@ -4,7 +4,9 @@ pipeline{
    }
    stages{
       stage('git cloning'){
-         checkout scm 
+         steps{
+            checkout scm 
+         }
       }
 
       stage('maven build'){
