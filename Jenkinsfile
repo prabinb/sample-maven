@@ -1,7 +1,7 @@
 node{
 
 stage('git cloning'){
-   scm checkout
+   checkout scm 
 }
 
 stage('maven build'){
