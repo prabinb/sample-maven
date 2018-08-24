@@ -1,5 +1,5 @@
 pipeline{
-   agent 'instance-1'
+   agent('instance-1'){
       stage('git cloning'){
          checkout scm 
       }
@@ -7,5 +7,5 @@ pipeline{
       stage('maven build'){
 
       }
-   
+   }
 }
