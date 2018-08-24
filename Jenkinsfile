@@ -1,13 +1,14 @@
 pipeline{
-   agent{
-      label 'instance-1'
-   }
-   stage('git cloning'){
-      checkout scm 
-   }
+   stages{
+      agent{
+         label 'instance-1'
+      }
+      stage('git cloning'){
+         checkout scm 
+      }
 
-   stage('maven build'){
+      stage('maven build'){
 
+      }
    }
-   
 }
